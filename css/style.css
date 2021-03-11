@@ -75,12 +75,13 @@ html {
   height: 100%;
   width: 100%;
   opacity: 0;
+  background-color: #204C68;
   -webkit-animation-name: fadeIn;
           animation-name: fadeIn;
   -webkit-animation-duration: 1s;
           animation-duration: 1s;
-  -webkit-animation-delay: .5s;
-          animation-delay: .5s;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
   text-align: center;
@@ -123,8 +124,10 @@ html {
 @-webkit-keyframes fadeIn {
   0% {
     opacity: 0%;
+    background-color: #204C68;
   }
   100% {
+    background-color: #fff;
     opacity: 100%;
   }
 }
@@ -132,8 +135,10 @@ html {
 @keyframes fadeIn {
   0% {
     opacity: 0%;
+    background-color: #204C68;
   }
   100% {
+    background-color: #fff;
     opacity: 100%;
   }
 }

@@ -22,9 +22,10 @@ html {
     height: 100%;
     width: 100%;
     opacity: 0;
+    background-color: #204C68;
     animation-name: fadeIn;
     animation-duration: 1s;
-    animation-delay: .5s;
+    animation-delay: 2s;
     animation-fill-mode: forwards;
     text-align: center;
     display: flex;
@@ -50,8 +51,10 @@ html {
 @keyframes fadeIn {
   0% {
     opacity: 0%;
+    background-color: #204C68;
   }
   100% {
+    background-color: #fff;
     opacity: 100%;
   }
 }
