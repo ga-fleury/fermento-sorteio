@@ -1,0 +1,57 @@
+@import "reset";
+
+body {
+  margin: 0;
+  height: 100%;
+}
+
+html {
+    height: 100%;
+}
+
+#bm {
+  height: 100%;
+  position: absolute;
+  z-index: 10;
+  animation-name: fadeOut;
+  animation-duration: 4.2s;
+  object-fit: cover;
+}
+
+.content-wrap {
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    animation-name: fadeIn;
+    animation-duration: 1s;
+    animation-delay: .5s;
+    animation-fill-mode: forwards;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content {
+    width: 50%;
+    margin: auto;
+    transform: translateY(-50%)
+}
+
+@keyframes fadeOut {
+  90% {
+    visibility: visible;
+  }
+  100% {
+    visibility: hidden;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0%;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
