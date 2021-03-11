@@ -53,14 +53,19 @@ input {
 body {
   margin: 0;
   height: 100%;
+  width: 100%;
+  background-color: #204c68;
 }
 
 html {
   height: 100%;
+  width: 100%;
+  background-color: #204c68;
 }
 
 #bm {
   height: 100%;
+  width: 100%;
   position: absolute;
   z-index: 10;
   -webkit-animation-name: fadeOut;
@@ -75,13 +80,11 @@ html {
   height: 100%;
   width: 100%;
   opacity: 0;
-  background-color: #204C68;
+  background-color: #204c68;
   -webkit-animation-name: fadeIn;
           animation-name: fadeIn;
-  -webkit-animation-duration: 1s;
-          animation-duration: 1s;
-  -webkit-animation-delay: 2s;
-          animation-delay: 2s;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
   text-align: center;
@@ -124,7 +127,11 @@ html {
 @-webkit-keyframes fadeIn {
   0% {
     opacity: 0%;
-    background-color: #204C68;
+    background-color: #204c68;
+  }
+  90% {
+    opacity: 0%;
+    background-color: #204c68;
   }
   100% {
     background-color: #fff;
@@ -135,7 +142,11 @@ html {
 @keyframes fadeIn {
   0% {
     opacity: 0%;
-    background-color: #204C68;
+    background-color: #204c68;
+  }
+  90% {
+    opacity: 0%;
+    background-color: #204c68;
   }
   100% {
     background-color: #fff;
