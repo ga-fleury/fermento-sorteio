@@ -4,32 +4,38 @@ body {
   margin: 0;
   height: 100%;
   width: 100%;
-  background-color: #204c68;
 }
 
 html {
   height: 100%;
   width: 100%;
-  background-color: #204c68;
+}
+
+.loader-wrap {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: 10;
+    animation-name: fadeOut;
+    animation-duration: 1s;
+    object-fit: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 #bm {
   height: 100%;
   width: 100%;
-  position: absolute;
-  z-index: 10;
-  animation-name: fadeOut;
-  animation-duration: 4.2s;
-  object-fit: cover;
+  max-width: 500px;
 }
 
 .content-wrap {
   height: 100%;
   width: 100%;
   opacity: 0;
-  background-color: #204c68;
   animation-name: fadeIn;
-  animation-duration: 4s;
+  animation-duration: 1.5s;
   animation-fill-mode: forwards;
   text-align: center;
   display: flex;
@@ -55,14 +61,11 @@ html {
 @keyframes fadeIn {
   0% {
     opacity: 0%;
-    background-color: #204c68;
   }
   90% {
     opacity: 0%;
-    background-color: #204c68;
   }
   100% {
-    background-color: #fff;
     opacity: 100%;
   }
 }
